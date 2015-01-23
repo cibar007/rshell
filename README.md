@@ -1,1 +1,1 @@
-Basic git shell that supports some gcc functions. It is a very basic bash and has some errors and bugs. Testing for these is still on the works.
+Basic command shell which supports most commands that other git consoles already support. Commands that do not workas of now are || and possibly &&. Bash also fails to recognize comments inputed into it.
