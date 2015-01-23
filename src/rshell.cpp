@@ -4,12 +4,37 @@
 #include <stdio.h>
 #include <sys/wait.h>
 #include <stdlib.h>
+#include <algorithm>
+#include <cctype>
+#include <functional>
+#include <locale>
+#include <sys/types.h>
 
 using namespace std;
 
+void makeARGV(char *cmd, char **argV)
+{
+	while(*cmd != '\0')
+	{
+		if(*cmd == '#')
+		{
+			*cmd = '\0';
+			break;
+		}
+
+		while(*cmd == ' '|| *cmd == '\t' || *cmd == '\n')
+			*cmd++ = '\0';
+
+		*argV++ = cmd;
+		while(*cmd != '\0' && *cmd != ' ' && *cmd != '\t' && *cmd != '\n')
+			cmd++;
+	}
+	*argV = '\0';	
+}
+
 int main()
 {
-	string input = "";
+	char cmd[100];
 	/*
 	char sz[128] = "";
 
@@ -17,19 +42,11 @@ int main()
 	string host = gethostname(sz, sizeof(sz));*/
 	
 	cout /*<< name << '@' << host */<< '$';
-	cin >> input;
+	cin.getline(cmd, 100, '\n');
 	cout << endl;
-
-	char cmd[] = "ls";
-	char *argV[] = {"ls" , "-a" , NULL};
+	char *argV[100];
+	makeARGV(cmd, argV);
 	
-//	for(int i = 0; i < input.size() ; i++)
-	{}
-//		argV[i] = new char[file[i]];	
-	
-//	for(int i = 0 ; i < input.size() ; i++)
-	{
-	}
 
 	int pid = fork();
 	if(pid == -1)
