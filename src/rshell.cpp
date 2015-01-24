@@ -1,13 +1,10 @@
-nclude <iostream>
-#include <string>
+#include <iostream>
+#include <string.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/wait.h>
 #include <stdlib.h>
 #include <algorithm>
-#include <cctype>
-#include <functional>
-#include <locale>
 #include <sys/types.h>
 
 using namespace std;
@@ -26,8 +23,7 @@ void makeARGV(char *cmd, char **argV)
                         *cmd++ = '\0';
 
                 *argV++ = cmd;
-                while(*cmd != '\0' && *cmd != ' ' && *cmd != '\t' && *cmd != '\
-')
+                while(*cmd != '\0' && *cmd != ' ' && *cmd != '\t' && *cmd !='\n')
                         cmd++;
         }
         *argV = '\0';
@@ -41,13 +37,17 @@ int main()
  *
  *                 string name = getlogin(sz, sizeof(sz));
  *                         string host = gethostname(sz, sizeof(sz));*/
-
+	char *argV[100];
+	while(1)
+	{	
         cout /*<< name << '@' << host */<< '$';
         cin.getline(cmd, 100, '\n');
         cout << endl;
+	
         char *argV[100];
         makeARGV(cmd, argV);
-
+	if(strcmp(*argV, "exit") == 0)
+		exit(0);
 
         int pid = fork();
         if(pid == -1)
@@ -68,6 +68,7 @@ int main()
                 if(-1 == wait(0))
                         perror("There was an error with wait().");
         }
+	}
 	return 0;
 }
 
