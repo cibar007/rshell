@@ -37,9 +37,8 @@ int main()
  *
  *                 string name = getlogin(sz, sizeof(sz));
  *                         string host = gethostname(sz, sizeof(sz));*/
-	char *argV[100];
 	while(1)
-	{	
+	{
         cout /*<< name << '@' << host */<< '$';
         cin.getline(cmd, 100, '\n');
         cout << endl;
@@ -57,12 +56,12 @@ int main()
         }
 
         else if(pid == 0)
-                if(execvp(*argV, argV) != 0)
+        {        if(execvp(*argV, argV) != 0)
                 {
                         perror("error in execvp");
                         exit(1);
                 }
-
+	}
         else if(pid>0)
         {
                 if(-1 == wait(0))
