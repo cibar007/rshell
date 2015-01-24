@@ -2756,4 +2756,514 @@ ls: cannot access #: No such file or directory
 {[17;8H [33mwhile[m(*cmd != [35m'\0'[m)[18;8H {[19;16H [33mif[m(*cmd == [31m'#'[m)[20;24H [33mbreak[m;[22;16H [33mwhile[m(*cmd == [31m' '[m|| *cmd == [35m'\t'[m || *cmd == [35m'\n'[m)[23;24H *cmd++ = [35m'\0'[m;[25;63H21,0-1[8CTop[21;1H[25;64H0,1-8[20;8H[25;63H19[19;8H[25;64H8[18;8H[25;64H7[17;8H[25;64H6,1  [16;1H[25;64H7,1-8[17;8H[25;64H8[18;8H[25;64H9[19;8H[25;63H20[20;8H[25;64H1,0-1[21;1H[25;64H2,1-8[22;8H[25;64H3[23;8H[25;64H4,0-1[24;1H[1;24r[24;1H
 [1;25r[24;16H *argV++ = cmd;[25;1H[K[25;63H25,1-8[9C1%[24;8H[1;24r[1;1H[2M[1;25r[23;16H [33mwhile[m(*cmd != [35m'\0'[m && *cmd != [31m' '[m && *cmd != [35m'\t'[m && *cmd != [35m'\nn[24;1H'[m)[25;63H[K[25;63H26,1-8[9C4%[23;8H[1;24r[24;1H
 [1;25r[24;24H cmd++;[25;63H[K[25;63H27,1-8[9C6%[24;8H[1;24r[24;1H
-[1;25r[24;8H }[25;63H[K[25;63H28,1-8[9C8%[24;8H[25;64H7[23;8H[25;64
+[1;25r[24;8H }[25;63H[K[25;63H28,1-8[9C8%[24;8H[25;64H7[23;8H[25;64H6[21;8H[25;64H5[20;8H[25;64H4,0-1[19;1H[25;64H3,1-8[18;8H[25;64H2[17;8H[25;64H1,0-1[16;1H[25;64H0,1-8[15;8H[25;66H2-16[15;16H[25;66H3-24[15;24H[25;66H4-25[15;25H[25;64H1,0-1 [16;1H[25;64H2,11-25[17;25H[25;64H1,0-1  [16;1H[25;64H0,4-25[15;25H[25;63H19,11-25[14;25H[25;67H2-26[14;26H[25;67H3-27[14;27H[25;67H4-28[14;28H[25;67H5-29[14;29H[25;67H6-30[14;30H[14;19H[46m([11C)[m[25;67H7-31[14;31H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H19,18-32[7C8%[14;32H[15;24r[15;1H[L[1;25r[25;63H[K[25;63H20,1[11C8%[14;19H([11C)
+[25;66H2-9[15;9H[25;66H3-17[15;17H {[25;66H4-18[15;18H[16;24r[16;1H[L[1;25r[25;63H[K[25;63H21,1[11C7%[16;1H[25;66H2-9[16;9H[25;66H3-17[16;17H[25;66H4-25[16;25H *[25;66H5-26[16;26H*c[25;66H6-27[16;27Hcm[25;66H7-28[16;28Hmd[25;66H8-29[16;29Hd+[25;66H9-30[16;30H++[25;66H10-31[16;31H[25;67H1-32[16;32H =[25;67H2-33[16;33H[25;67H3-34[16;34H '[25;67H4-35[16;35H'\[25;67H5-36[16;36H\[31m0[m[25;67H6-37[16;37H[35m'\0'[m[25;67H7-38[16;38H[35m'[m;[25;67H8-39[16;39H[25;1H[K[16;38H[25;63H21,17-38[7C7%[16;38H[25;64H2,9-30 [17;30H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H22,10-31[7C7%[17;31H[18;24r[18;1H[L[1;25r[24;1H[1m[34m@                                                                               [m[25;63H[K[25;63H23,1[11C7%[18;1H[25;66H2-9[18;9H[25;66H3-17[18;17H }[15;17H[46m{[18;17H}[m[25;66H4-18[18;18H[25;1H[K[18;17H[25;63H23,3-17[8C7%[18;17H[25;63H[K[25;1H:wq"rshell.cpp" 87L, 1119C written
+[?1l>[2J[?47l8[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp g++[C[C[C[C[C[C[C[C[C[C[C[C
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m g++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[Cg++[C[C[C[C[C[C[C[C[C[C[C[C[8P./a.out
+$ls
+
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m a.out  rshell.cpp
+
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ls
+a.out  rshell.cpp
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m l
+bash: l: command not found
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m s[Kls./a.out
+$ls
+
+a.out  rshell.cpp
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ./a.out
+$ls #
+
+ls: cannot access #: No such file or directory
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ./a.outl[Ks./a.outg++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C
+7[?47h[?1h=[1;25r[m[H[2J[25;1H"rshell.cpp" 87L, 1119C[>c[1;1H[35m#include [m[31m<iostream>[m
+[35m#include [m[31m<string>[m
+[35m#include [m[31m<unistd.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<sys/wait.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<algorithm>[m
+[35m#include [m[31m<cctype>[m
+[35m#include [m[31m<functional>[m
+[35m#include [m[31m<locale>[m
+[35m#include [m[31m<sys/types.h>[m
+
+[33musing[m [32mnamespace[m std;
+
+[32mvoid[m makeARGV([32mchar[m *cmd, [32mchar[m **argV)
+{[17;8H [33mwhile[m(*cmd != [35m'\0'[m)[18;8H {[19;16H [33mif[m(*cmd == [31m'#'[m)[20;16H [46m{[m[21;24H *cmd++ = [35m'\0'[m;[22;24H [33mbreak[m;[23;16H [46m}[m[25;63H23,3-17[7CTop[23;17H[20;17H{[23;17H}[25;64H2,3-24[22;24H[25;64H1[21;24H[25;66H4-25[21;25H[25;66H5-26[21;26H[25;66H6-27[21;27H[25;66H7-28[21;28H[25;66H8-29[21;29H[25;66H9-30[21;30H[25;66H10-31[21;31H[25;67H1-32[21;32H[25;67H2-33[21;33H[25;67H3-34[21;34H[25;67H4-35[21;35H[25;64H2,9-30 [22;30H[25;64H1,14-35[21;35H[25;64H2,9-30 [22;30H[25;64H1,14-35[21;35H[25;67H3-34[21;34H[25;67H2-33[21;33H[25;67H1-32[21;32H[25;67H0-31[21;31H[25;66H9-30 [21;30H[25;66H8-29[21;29H[20;17H[46m{[23;17H}[m[25;64H0,3-17[20;17H{[23;17H}[25;64H1,8-29[21;29H[25;66H9-30[21;30H[25;66H10-31[21;31H[25;1H[1m-- INSERT --[m[25;14H[K[25;63H21,10-31      Top[21;31H+ = [35m'\0'[m;[21;38H[K[25;66H9-30 [21;30Hd = [35m'\0'[m;[21;37H[K[25;66H8-29[21;29H[25;1H[K[21;28H[25;63H21,7-28[7CTop[21;28H[25;63H[K[25;1H:wq"rshell.cpp" 87L, 1117C written
+[?1l>[2J[?47l8[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp [8P./a.outl[Ks./a.outg++ rshell.cpp 
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m g++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C[8P./a.out
+$ls ##
+
+ls: cannot access ##: No such file or directory
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m cd
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~[0;95m [0;36m$[0m cd rshell
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m cd src
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ls
+a.out  rshell.cpp
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m git add rshell.cpp
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m it[K[Kgit co[Kommit -m "updated versii[Kon which foxes  m[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kixes  most verso[Kion [Ks on the [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kworks[K[K[K[K[K[K[K[K[K[K[Kwhich now wo rkds[K[Ks with most cases mentioned in the tests script"
+[exec c0e0724] updated version which now works with most cases mentioned in the tests script
+ Committer: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 29 insertions(+), 12 deletions(-)
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m c[Kclear
+[H[2J[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m git status
+# On branch exec
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   ../tests/exec.script[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31ma.out[m
+no changes added to commit (use "git add" and/or "git commit -a")
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m git log
+[?1h=[33mcommit c0e0724cb1575fb68b5962c8fccd79d66f27e586[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 14:36:26 2015 -0800[m
+[m
+    updated version which now works with most cases mentioned in the tests scrip[m
+[m
+[33mcommit de22d7b4b8a3c32a806774d964eda3308589c4fc[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 11:37:04 2015 -0800[m
+[m
+    Very basic version of the project[m
+[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K [KESCESC[KESCESC[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K...skipping...
+[33mcommit c0e0724cb1575fb68b5962c8fccd79d66f27e586[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 14:36:26 2015 -0800[m
+[m
+    updated version which now works with most cases mentioned in the tests scrip[m
+[m
+[33mcommit de22d7b4b8a3c32a806774d964eda3308589c4fc[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 11:37:04 2015 -0800[m
+[m
+    Very basic version of the project[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[7m(END) [m[K[K[7m(END) [m[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K...skipping...
+[m
+                   [1mSUMMARY[m [1mOF[m [1mLESS[m [1mCOMMANDS[m[m
+[m
+      Commands marked with * may be preceded by a number, [4mN[m.[m
+      Notes in parentheses indicate the behavior if [4mN[m is given.[m
+[m
+  h  H                 Display this help.[m
+  q  :q  Q  :Q  ZZ     Exit.[m
+ ---------------------------------------------------------------------------[m
+[m
+                           [1mMOVING[m[m
+[m
+  e  ^E  j  ^N  CR  *  Forward  one line   (or [4mN[m lines).[m
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or [4mN[m lines).[m
+  f  ^F  ^V  SPACE  *  Forward  one window (or [4mN[m lines).[m
+  b  ^B  ESC-v      *  Backward one window (or [4mN[m lines).[m
+  z                 *  Forward  one window (and set window to [4mN[m).[m
+  w                 *  Backward one window (and set window to [4mN[m).[m
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.[m
+  d  ^D             *  Forward  one half-window (and set half-window to [4mN[m).[m
+  u  ^U             *  Backward one half-window (and set half-window to [4mN[m).[m
+  ESC-)  RightArrow *  Left  one half screen width (or [4mN[m positions).[m
+  ESC-(  LeftArrow  *  Right one half screen width (or [4mN[m positions).[m
+  F                    Forward forever; like "tail -f".[m
+[7mHELP -- Press RETURN for more, or q when done[m[K[K[7mHELP -- Press RETURN for more, or q when done[m[K[K[K[7mHELP -- Press RETURN for more, or q when done[m[K[K[7mHELP -- Press RETURN for more, or q when done[m[K[K  r  ^R  ^L            Repaint screen.[m
+[7mHELP -- Press RETURN for more, or q when done[m[K[K  R                    Repaint screen, discarding buffered input.[m
+[7mHELP -- Press RETURN for more, or q when done[m[K[K        ---------------------------------------------------[m
+[7mHELP -- Press RETURN for more, or q when done[m[K[K        Default "window" is the screen height.[m
+[7mHELP -- Press RETURN for more, or q when done[m[K[K        Default "half-window" is half of the screen height.[m
+[7mHELP -- Press RETURN for more, or q when done[m[K[K ---------------------------------------------------------------------------[m
+[7mHELP -- Press RETURN for more, or q when done[m[K...skipping...
+[33mcommit c0e0724cb1575fb68b5962c8fccd79d66f27e586[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 14:36:26 2015 -0800[m
+[m
+    updated version which now works with most cases mentioned in the tests scrip[m
+[m
+[33mcommit de22d7b4b8a3c32a806774d964eda3308589c4fc[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 11:37:04 2015 -0800[m
+[m
+    Very basic version of the project[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[7m(END) [m[K[K[K[7m(END) [m[K[K[?1l>[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m qq[K[Kclear
+[H[2J[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m cd ..
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m ls
+LICENSE  Makefile  README.md  src  tests
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m vim README.md
+7[?47h[?1h=[1;25r[m[H[2J[25;1H"README.md" 1L, 145C[>c[1;1HBasic git shell that supports some gcc functions. It is a very basic bash and haa[2;1Hs some errors and bugs. Testing for these is still on the works.
+[1m[34m~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [m[25;63H1,1[11CAll[1;1H[1;1H[K[2;1H[1m[34m~                                                                               [m[25;1H--No lines in buffer--[25;63H[K[25;63H0,0-1[9CAll[1;1H[25;1H[1m-- INSERT --[m[25;13H[K[25;63H0,1[11CAll[1;1HB[25;63H1,2[1;2HBa[25;65H3[1;3Has[25;65H4[1;4Hsi[25;65H5[1;5Hic[25;65H6[1;6H[25;65H7[1;7H c[25;65H8[1;8Hco[25;65H9[1;9Hom[25;65H10[1;10Hmm[25;66H1[1;11Hma[25;66H2[1;12Han[25;66H3[1;13Hnd[25;66H4[1;14H[25;66H5[1;15H s[25;66H6[1;16Hsh[25;66H7[1;17Hhe[25;66H8[1;18Hel[25;66H9[1;19Hll[25;65H20[1;20H[25;66H1[1;21H w[25;66H2[1;22Hwh[25;66H3[1;23Hhi[25;66H4[1;24Hih[25;66H5[1;25H[1;24H[K[25;66H4[1;24Hic[25;66H5[1;25Hch[25;66H6[1;26H[25;66H7[1;27H s[25;66H8[1;28Hsu[25;66H9[1;29Hu[[25;65H30[1;30H[[[25;66H1[1;31H[1;30H[K[25;66H0[1;30H[1;29H[K[25;65H29[1;29Hup[25;65H30[1;30Hpp[25;66H1[1;31Hpo[25;66H2[1;32Hor[25;66H3[1;33Hrt[25;66H4[1;34Hts[25;66H5[1;35H[25;66H6[1;36H m[25;66H7[1;37Hms[25;66H8[1;38Hst[25;66H9[1;39H[1;38H[K[25;66H8[1;38H[1;37H[K[25;66H7[1;37Hmo[25;66H8[1;38Hos[25;66H9[1;39Hst[25;65H40[1;40H[25;66H1[1;41H f[25;66H2[1;42Hfu[25;66H3[1;43H[1;42H[K[25;66H2[1;42H[1;41H[K[25;66H1[1;41H c[25;66H2[1;42Hco[25;66H3[1;43Hom[25;66H4[1;44Hmm[25;66H5[1;45Hma[25;66H6[1;46Han[25;66H7[1;47Hnd[25;66H8[1;48Hds[25;66H9[1;49H[25;65H50[1;50H t[25;66H1[1;51Hth[25;66H2[1;52Hha[25;66H3[1;53Hat[25;66H4[1;54H[25;66H5[1;55H o[25;66H6[1;56Hot[25;66H7[1;57Hth[25;66H8[1;58Hhe[25;66H9[1;59Her[25;65H60[1;60H[25;66H1[1;61H[25;66H0[1;60H[1;59H[K[25;65H59[1;59H[1;58H[K[25;66H8[1;58H[1;57H[K[25;66H7[1;57H[1;56H[K[25;66H6[1;56H[1;55H[K[25;66H5[1;55H m[25;66H6[1;56Hmo[25;66H7[1;57Hos[25;66H8[1;58Hst[25;66H9[1;59H[25;65H60[1;60H s[25;66H1[1;61Hsh[25;66H2[1;62H[1;61H[K[25;66H1[1;61H[1;60H[K[25;66H0[1;60H[25;65H59[1;59H[1;58H[K[25;66H8[1;58H[1;57H[K[25;66H7[1;57H[1;56H[K[25;66H6[1;56H[1;55H[K[25;66H5[1;55H s[25;66H6[1;56Hsh[25;66H7[1;57Hhe[25;66H8[1;58Hel[25;66H9[1;59Hll[25;65H60[1;60Hls[25;66H1[1;61H[25;66H2[1;62H[25;66H1[1;61H[1;60H[K[25;66H0[1;60H[1;59H[K[25;65H59[1;59H[1;58H[K[25;66H8[1;58H[1;57H[K[25;66H7[1;57H[1;56H[K[25;66H6[1;56H[1;55H[K[25;66H5[1;55H o[25;66H6[1;56Hot[25;66H7[1;57Hth[25;66H8[1;58Hhe[25;66H9[1;59Her[25;65H60[1;60H[25;66H1[1;61H g[25;66H2[1;62Hgi[25;66H3[1;63Hit[25;66H4[1;64H[25;66H5[1;65H c[25;66H6[1;66Hco[25;66H7[1;67Hon[25;66H8[1;68Hns[25;66H9[1;69Hso[25;65H70[1;70Hol[25;66H1[1;71Hls[25;66H2[1;72Hse[25;66H3[1;73H[1;72H[K[25;66H2[1;72H[1;71H[K[25;66H1[1;71Hle[25;66H2[1;72Hes[25;66H3[1;73H[25;66H4[1;74H a[25;66H5[1;75Hal[25;66H6[1;76Hlr[25;66H7[1;77Hre[25;66H8[1;78Hea[25;66H9[1;79Had[25;65H80[1;80Hdy[25;66H1[2;1H [2;2H[K[25;66H2[2;2H s[25;66H3[2;3Hsu[25;66H4[2;4Hup[25;66H5[2;5Hpp[25;66H6[2;6Hpo[25;66H7[2;7Hor[25;66H8[2;8Hrt[25;66H9[2;9Ht.[25;65H90[2;10H[25;66H1[2;11H C[25;66H2[2;12HCo[25;66H3[2;13Hom[25;66H4[2;14Hmm[25;66H5[2;15Hma[25;66H6[2;16Han[25;66H7[2;17Hnd[25;66H8[2;18Hds[25;66H9[2;19H[25;65H100[2;20H t[25;67H1[2;21Hth[25;67H2[2;22Hha[25;67H3[2;23Hat[25;67H4[2;24H[25;67H5[2;25H c[25;67H6[2;26Hcu[25;67H7[2;27Hur[25;67H8[2;28Hrr[25;67H9[2;29Hre[25;66H10[2;30Hen[25;67H1[2;31Hnt[25;67H2[2;32Htl[25;67H3[2;33Hly[25;67H4[2;34H[25;67H5[2;35H[25;67H4[2;34H[2;33H[K[25;67H3[2;33H[2;32H[K[25;67H2[2;32H[2;31H[K[25;67H1[2;31H[2;30H[K[25;67H0[2;30H[2;29H[K[25;66H09[2;29H[2;28H[K[25;67H8[2;28H[2;27H[K[25;67H7[2;27H[2;26H[K[25;67H6[2;26H[2;25H[K[25;67H5[2;25H d[25;67H6[2;26Hdo[25;67H7[2;27H[25;67H8[2;28H n[25;67H9[2;29Hno[25;66H10[2;30Hot[25;67H1[2;31H[25;67H2[2;32H w[25;67H3[2;33Hwo[25;67H4[2;34Hor[25;67H5[2;35Hrk[25;67H6[2;36H[25;67H7[2;37H a[25;67H8[2;38Has[25;67H9[2;39H[25;66H20[2;40H o[25;67H1[2;41Hof[25;67H2[2;42H[25;67H3[2;43H n[25;67H4[2;44Hno[25;67H5[2;45How[25;67H6[2;46H[2;45H[K[25;67H5[2;45H[2;44H[K[25;67H4[2;44H[2;43H[K[25;67H3[2;43H[25;67H2[2;42H[2;41H[K[25;67H1[2;41H[2;40H[K[25;67H0[2;40H[25;66H19[2;39H[2;38H[K[25;67H8[2;38H[2;37H[K[25;67H7[2;37H[25;67H6[2;36Hka[25;67H7[2;37Has[25;67H8[2;38H o[25;66H20[2;40Hof[25;67H1[2;41H[25;67H2[2;42H n[25;67H3[2;43Hno[25;67H4[2;44How[25;67H5[2;45H[25;67H6[2;46H a[25;67H7[2;47Hare[25;67H9[2;49H[25;66H30[2;50H |[25;67H1[2;51H||[25;67H2[2;52H[25;67H3[2;53H a[25;67H4[2;54Han[25;67H5[2;55Hnd[25;67H6[2;56H[25;67H7[2;57H[25;67H6[2;56H[2;55H[K[25;67H5[2;55H[2;54H[K[25;67H4[2;54Han[25;67H5[2;55Hnd[25;67H6[2;56H[25;67H7[2;57H p[25;67H8[2;58Hpo[25;67H9[2;59Hos[25;66H40[2;60Hss[25;67H1[2;61Hsi[25;67H2[2;62Hib[25;67H3[2;63Hbl[25;67H4[2;64Hly[25;67H5[2;65H[25;67H6[2;66H &[25;67H7[2;67H&&[25;67H8[2;68H&.[25;67H9[2;69H[25;66H50[2;70H B[25;67H1[2;71HBa[25;67H2[2;72Has[25;67H3[2;73Hsh[25;67H4[2;74H[25;67H5[2;75H a[25;67H6[2;76Hal[25;67H7[2;77Hlo[25;67H8[2;78H[2;77H[K[25;67H7[2;77Hls[25;67H8[2;78Hso[25;67H9[2;79H[25;66H60[2;80H f[25;67H1[3;1Ha[3;2H[K[25;67H2[3;2Hai[25;67H3[3;3Hil[25;67H4[3;4Hls[25;67H5[3;5H[25;67H6[3;6H[25;67H5[3;5H[25;67H6[3;6H t[25;67H7[3;7Hto[25;67H8[3;8H[25;67H9[3;9H r[25;66H70[3;10Hre[25;67H1[3;11Hec[25;67H2[3;12Hco[25;67H3[3;13Hog[25;67H4[3;14Hgn[25;67H5[3;15Hni[25;67H6[3;16Hiz[25;67H7[3;17Hze[25;67H8[3;18H[25;67H9[3;19H c[25;66H80[3;20Hco[25;67H1[3;21Hom[25;67H2[3;22Hmm[25;67H3[3;23Hme[25;67H4[3;24Hen[25;67H5[3;25Hnt[25;67H6[3;26Hts[25;67H7[3;27H[25;67H8[3;28H i[25;67H9[3;29Hin[25;66H90[3;30Hno[25;67H1[3;31Hou[25;67H2[3;32Hut[25;67H3[3;33Hte[25;67H4[3;34H[3;33H[K[25;67H3[3;33H[3;32H[K[25;67H2[3;32H[3;31H[K[25;67H1[3;31H[3;30H[K[25;67H0[3;30Hnp[25;67H1[3;31Hpu[25;67H2[3;32Hut[25;67H3[3;33Hte[25;67H4[3;34Hed[25;67H5[3;35H[25;67H6[3;36H i[25;67H7[3;37Hin[25;67H8[3;38Hnt[25;67H9[3;39Hto[25;65H200[3;40H[25;67H1[3;41H i[25;67H2[3;42Hit[25;67H3[3;43Ht.[25;67H4[3;44H[25;1H[K[3;43H[25;63H1,203[9CAll[3;43H[25;63H[K[25;1H:wq"README.md" 1L, 204C written
+[?1l>[2J[?47l8[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m add REAAA[KD[K[KDME.md tests[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit add README.md tests
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m git commit -m a[K"just[K[K[K[Kne [K[K[Kmodified readme file and made a  test script"
+[exec a3a658d] modified readme file and made a test script
+ Committer: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2760 insertions(+), 1 deletion(-)
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m git commit -m "modified readme file and made a ttest script"[A[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m [C[C[C[C[24Padd README.md tests
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "modified readme file and made a ttest script"[A[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit log
+[?1h=[33mcommit a3a658d05a1c6d6831e4a8bce0a5bd5d589f4328[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 14:40:12 2015 -0800[m
+[m
+    modified readme file and made a test script[m
+[m
+[33mcommit c0e0724cb1575fb68b5962c8fccd79d66f27e586[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 14:36:26 2015 -0800[m
+[m
+    updated version which now works with most cases mentioned in the tests scrip[m
+[m
+[33mcommit de22d7b4b8a3c32a806774d964eda3308589c4fc[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 11:37:04 2015 -0800[m
+[m
+    Very basic version of the project[m
+[7m(END) [m[K[K[K[7m(END) [m[K[K...skipping...
+[33mcommit a3a658d05a1c6d6831e4a8bce0a5bd5d589f4328[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 14:40:12 2015 -0800[m
+[m
+    modified readme file and made a test script[m
+[m
+[33mcommit c0e0724cb1575fb68b5962c8fccd79d66f27e586[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 14:36:26 2015 -0800[m
+[m
+    updated version which now works with most cases mentioned in the tests scrip[m
+[m
+[33mcommit de22d7b4b8a3c32a806774d964eda3308589c4fc[m[m
+Author: Cristian Ibarra <cibar007@hammer.cs.ucr.edu>[m
+Date:   Fri Jan 23 11:37:04 2015 -0800[m
+[m
+    Very basic version of the project[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[K[7m(END) [m[K[K[?1l>[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m q[Kclear
+[H[2J[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell[0;95m (exec) [0;36m$[0m cd rshe[K[K[K[Ksrc
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m cd src[1Pleargit logcommit -m "modified readme file and madee a test script"[A[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m [C[C[C[C[20Padd README.md tests
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pvim README.mdls[Kcd ..leargit logstatus[5Pcleargit commit -m "updated version which now worrks with most cases mentioned in the tests script"[A[25Padd rshell.cpp
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd srcrshell[K./a.outg++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C[8P./a.outvim rshell.cpp g++[C[C[C[C[C[C[C[C[C[C[C[C
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ./a.out
+$ls && echo hello
+
+ls: cannot access &&: No such file or directory
+ls: cannot access echo: No such file or directory
+ls: cannot access hello: No such file or directory
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ./a.out
+$echo gelo
+
+gelo
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp 
+7[?47h[?1h=[1;25r[m[H[2J[25;1H"rshell.cpp" 87L, 1117C[>c[1;1H[35m#include [m[31m<iostream>[m
+[35m#include [m[31m<string>[m
+[35m#include [m[31m<unistd.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<sys/wait.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<algorithm>[m
+[35m#include [m[31m<cctype>[m
+[35m#include [m[31m<functional>[m
+[35m#include [m[31m<locale>[m
+[35m#include [m[31m<sys/types.h>[m
+
+[33musing[m [32mnamespace[m std;
+
+[32mvoid[m makeARGV([32mchar[m *cmd, [32mchar[m **argV)
+{[17;8H [33mwhile[m(*cmd != [35m'\0'[m)[18;8H {[19;16H [33mif[m(*cmd == [31m'#'[m)[20;16H {[21;24H *cmd = [35m'\0'[m;[22;24H [33mbreak[m;[23;16H }[25;63H21,4-25[7CTop[21;25H[25;64H2[22;25H[20;17H[46m{[23;17H}[m[25;64H3,3-17[23;17H[20;17H{[23;17H}[25;64H4,0-1 [24;1H[1;24r[24;1H
+[1;25r[24;16H [33mwhile[m(*cmd == [31m' '[m|| *cmd == [35m'\t'[m || *cmd == [35m'\n'[m)[25;1H[K[25;63H25,11-25[7C1%[24;25H[1;24r[24;1H
+[1;25r[24;24H *cmd++ = [35m'\0'[m;[25;63H[K[25;63H26,4-25[8C3%[24;25H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H27,0-1[9C4%[24;1H[1;24r[24;1H
+[1;25r[24;16H *argV++ = cmd;[25;63H[K[25;63H28,11-25[7C6%[24;25H[1;24r[1;1H[2M[1;25r[23;16H [33mwhile[m(*cmd != [35m'\0'[m && *cmd != [31m' '[m && *cmd != [35m'\t'[m && *cmd != [35m'\nn[24;1H'[m)[25;63H[K[25;63H29,11-25[7C9%[23;25H[1;24r[24;1H
+[1;25r[24;24H cmd++;[25;63H[K[25;63H30,4-25[7C10%[24;25H[1;24r[24;1H
+[1;25r[10;9H[46m{[m[24;8H [46m}[m[25;63H[K[25;63H31,2-9[8C12%[24;9H[1;24r[24;1H
+[1;25r[9;9H{[23;9H}[24;8H *argV = [35m'\0'[m;[25;63H[K[25;63H32,15-24      14%[24;24H[1;24r[24;1H
+[1;25r[6;1H[46m{[24;1H}[m[25;63H[K[25;63H33,1[10C15%[24;1H[1;24r[24;1H
+[1;25r[5;1H{[23;1H}[25;63H[K[25;63H34,0-1[8C17%[24;1H[1;24r[24;1H
+[1;25r[24;1H[32mint[m main[46m()[m[25;63H[K[25;63H35,10[9C18%[24;10H[1;24r[24;1H
+[1;25r[23;9H()
+{[25;63H[K[25;63H36,1[10C20%[24;1H[1;24r[24;1H
+[1;25r[24;8H [32mchar[m cmd[[31m100[m];[25;63H[K[25;63H37,15-22      21%[24;22H[1;24r[24;1H
+[1;25r[24;8H [34m/*[m[25;63H[K[25;63H38,3-10[7C23%[24;10H[1;24r[24;1H
+[1;25r[24;1H[34m        char sz[128] = "";[m[25;63H[K[25;63H39,18-25      25%[24;25H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H40,0-1[8C26%[24;1H[1;24r[24;1H
+[1;25r[24;1H[34m        string name = getlogin(sz, sizeof(sz));[m[25;63H[K[25;63H41,18-25      28%[24;25H[1;24r[24;1H
+[1;25r[24;1H[34m        string host = gethostname(sz, sizeof(sz));*/[m[25;63H[K[25;63H42,18-25      29%[24;25H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H43,1-8[8C31%[24;8H[25;64H2,18-25[23;25H[25;64H1[22;25H[25;64H0,0-1  [21;1H[25;63H39,18-25[20;25H[25;64H8,3-10 [19;10H[19;24r[24;1H
+[1;25r[19;1H        [32mchar[m sz[[31m128[m] = [31m""[m;
+
+        string name = getlogin(sz, [33msizeof[m(sz));
+        string host = gethostname(sz, [33msizeof[m(sz));[1m[37m[41m*/[m[24;8H cout [34m/*<< name << '@' << host */[m<< [31m'$'[m;[25;63H[K[25;63H38,2-9[8C31%[19;9H[19;24r[24;1H
+[1;25r[24;8H cin.getline(cmd, [31m100[m, [35m'\n'[m);[25;63H[K[25;63H38,0-1[8C32%[19;1H[19;24r[24;1H
+[1;25r[24;8H cout << endl;[25;63H[K[25;63H38,2-9[8C32%[19;9H[19;24r[24;1H
+[1;25r[24;8H [32mchar[m *argV[[31m100[m];[25;63H[K[25;63H38,2-9[8C33%[19;9H[19;24r[24;1H
+[1;25r[24;8H makeARGV(cmd, argV);[25;63H[K[25;63H38,1-8[8C33%[19;8H[25;64H9[20;8H[25;63H40[21;8H[25;64H1[22;8H[25;64H2[23;8H[25;64H3[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H44,1-8[8C35%[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H45,0-1[8C37%[24;1H[1;24r[24;1H
+[1;25r[24;8H [32mint[m pid = fork();[25;63H[K[25;63H46,1-8[8C38%[24;8H[1;24r[24;1H
+[1;25r[24;8H [33mif[m(pid == -[31m1[m)[25;63H[K[25;63H47,1-8[8C40%[24;8H[1;24r[24;1H
+[1;25r[24;8H {[25;63H[K[25;63H48,1-8[8C42%[24;8H[1;24r[24;1H
+[1;25r[24;16H perror([31m"fork fail"[m);[25;63H[K[25;63H49,1-8[8C44%[24;8H[1;24r[24;1H
+[1;25r[24;16H exit([31m1[m);[25;63H[K[25;63H50,1-8[8C45%[24;8H[1;24r[24;1H
+[1;25r[24;8H }[25;63H[K[25;63H51,1-8[8C47%[24;8H[25;64H0[23;8H[25;63H49[22;8H[25;64H8[21;8H[25;64H7[20;8H[25;64H6[19;8H[25;64H5,0-1[18;1H[25;64H4,1-8[17;8H[25;64H3[16;8H[25;64H2[15;8H[25;64H1[14;8H[25;64H0[13;8H[25;63H39[12;8H[25;64H8[11;8H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H38,1[10C47%[11;1H[25;66H2-9[11;9H c[25;66H3-10[11;10Hch[25;66H4-11[11;11Hha[25;66H5-12[11;12H[32mchar[m[25;66H6-13[11;13H[25;66H7-14[11;14H *[25;66H8-15[11;15H*R[25;66H9-16[11;16H* [25;66H8-15[11;15H*a[25;66H9-16[11;16Har[25;66H10-17[11;17Hrg[25;67H1-18[11;18HgV[25;67H2-19[11;19HV[[12;47H[1m[37m[41m;[13;36H;[14;21H;[15;24H;[16;28H;[19;25H;[21;9H{[22;36H;[23;24H;[24;9H}[m[25;67H3-20[11;20H[[31m1[m[25;67H4-21[11;21H[31m10[m[25;67H5-22[11;22H[31m00[m[25;67H6-23[11;23H[31m0[m][12;47H;[13;36H;[14;21H;[15;24H;[16;28H;[19;25H;[21;9H{[22;36H;[23;24H;[24;9H}[11;19H[46m[[3C][m[25;67H7-24[11;24H[46m][m;[[3C][25;67H8-25[11;25H[12;24r[12;1H[L[1;25r[25;63H[K[25;63H39,1[10C46%[12;1H[25;66H2-9[12;9H w[25;66H3-10[12;10Hwh[25;66H4-11[12;11Hhi[25;66H5-12[12;12Hil[25;66H6-13[12;13H[33mwhile[m[25;66H7-14[12;14H[33me[m([22;9H[1m[37m[41m{[m[25;66H8-15[12;15H([31m1[m[25;66H9-16[12;16H[31m1[m)[22;9H{[12;14H[46m([1C)[m[25;66H10-17[12;17H[13;24r[13;1H[L[1;25r[25;63H[K[25;63H40,1[10C45%[12;14H([1C)
+{[25;66H2[13;2H[25;1H[K[13;1H[25;63H40,1[10C45%[13;1H[25;64H1,1-8[14;8H[25;64H2[15;8H[25;64H3[16;8H[25;64H4[17;8H[25;64H5[18;8H[25;64H6[19;8H[25;64H7,0-1[20;1H[25;64H8,1-8[21;8H[25;64H9[22;8H[25;63H50[23;8H[25;64H1[24;8H[1;24r[1;1H[2M[1;25r[23;16H exit([31m1[m);[24;8H }[25;63H[K[25;63H52,1-8[8C48%[23;8H[25;64H3[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H54,0-1[8C50%[24;1H[1;24r[24;1H
+[1;25r[24;8H [33melse[m [33mif[m(pid == [31m0[m)[25;63H[K[25;63H55,1-8[8C51%[24;8H[1;24r[24;1H
+[1;25r[24;16H [33mif[m(execvp(*argV, argV) != [31m0[m)[25;63H[K[25;63H56,1-8[8C53%[24;8H[1;24r[24;1H
+[1;25r[24;16H {[25;63H[K[25;63H57,1-8[8C55%[24;8H[1;24r[24;1H
+[1;25r[24;24H perror([31m"error in execvp"[m);[25;63H[K[25;63H58,1-8[8C56%[24;8H[1;24r[24;1H
+[1;25r[24;24H exit([31m1[m);[25;63H[K[25;63H59,1-8[8C58%[24;8H[1;24r[24;1H
+[1;25r[24;16H }[25;63H[K[25;63H60,1-8[8C60%[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H61,1-8[8C61%[24;8H[1;24r[24;1H
+[1;25r[24;8H [33melse[m [33mif[m(pid>[31m0[m)[25;63H[K[25;63H62,1-8[8C63%[24;8H[1;24r[24;1H
+[1;25r[24;8H {[25;63H[K[25;63H63,1-8[8C65%[24;8H[1;24r[24;1H
+[1;25r[24;16H [33mif[m(-[31m1[m == wait([31m0[m))[25;63H[K[25;63H64,1-8[8C66%[24;8H[1;24r[24;1H
+[1;25r[24;24H perror([31m"There was an error with wait()."[m);[25;63H[K[25;63H65,1-8[8C68%[24;8H[1;24r[24;1H
+[1;25r[24;8H }[25;63H[K[25;63H66,1-8[8C70%[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H67,0-1[8C71%[24;1H[1;24r[24;1H
+[1;25r[24;8H [33mreturn[m [31m0[m;[25;63H[K[25;63H68,1-8[8C73%[24;8H[1;24r[24;1H
+[1;25r[24;1H}[25;63H[K[25;63H69,1[10C75%[24;1H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H70,0-1[8C76%[24;1H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H71,0-1[8C78%[24;1H[25;64H0[23;1H[25;63H69,1  [22;1H[25;64H8,1-8[21;8H[25;64H7,0-1[20;1H[25;63H70[23;1H[25;63H69,1  [22;1H[25;64H8,10-17[21;17H[25;66H9-16 [21;16H[25;66H8-15[21;15H[25;66H7-14[21;14H[25;64H9,1   [22;1H[25;63H70,0-1[23;1H[25;63H69,1  [22;1H[25;64H8,7-14[21;14H[25;64H7,0-1 [20;1H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H67,1[10C78%[20;1H[31m"[m[25;66H2[20;2H[20;1H[K[25;66H1[20;1H}[25;66H2[20;2H[25;1H[K[20;1H[25;63H67,1[10C78%[20;1H[25;64H6,1-8[19;8H[25;64H5[18;8H[25;64H4[17;8H[25;64H5[18;8H[25;64H6[19;8H[25;64H7,1  [20;1H[25;64H6,1-8[19;8H[25;64H5[18;8H[25;64H4[17;8H[25;64H3[16;8H[25;64H2[15;8H[25;64H1[14;8H[25;64H0[13;8H[25;63H59[12;8H[25;64H8[11;8H[25;64H7[10;8H[25;64H6[9;8H[25;64H5[8;8H[25;64H4,0-1[7;1H[25;64H3,1-8[6;8H[25;64H2[5;8H[25;64H1[4;8H[25;64H0[3;8H[25;63H49[2;8H[25;64H8[1;8H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H47,0-1[8C76%[1;1H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H46,1-8[8C75%[1;8H[1;24r[1;1H[L[1;25r[1;8H makeARGV(cmd, argV);[25;63H[K[25;63H45,1-8[8C73%[1;8H[1;24r[1;1H[L[1;25r[1;8H [32mchar[m *argV[[31m100[m];[25;63H[K[25;63H44,1-8[8C71%[1;8H[1;24r[1;1H[L[1;25r[1;8H cout << endl;[25;63H[K[25;63H43,1-8[8C70%[1;8H[1;24r[1;1H[L[1;25r[1;8H cin.getline(cmd, [31m100[m, [35m'\n'[m);[25;63H[K[25;63H42,1-8[8C68%[1;8H[1;24r[1;1H[L[1;25r[1;8H cout [34m/*<< name << '@' << host */[m<< [31m'$'[m;[25;63H[K[25;63H41,1-8[8C66%[1;8H[1;24r[1;1H[L[1;25r[1;1H{[25;63H[K[25;63H40,1[10C65%[1;1H[1;24r[1;1H[L[1;25r[1;8H [33mwhile[m([31m1[m)[25;63H[K[25;63H39,1-8[8C63%[1;8H[25;63H40,1  [2;1H[25;64H1,1-8[3;8H[25;64H2[4;8H[25;64H3[5;8H[25;64H4[6;8H[25;64H5[7;8H[25;64H6[8;8H[25;64H7,0-1[9;1H[25;64H8,1-8[10;8H[25;64H9[11;8H[25;63H50[12;8H[25;64H1[13;8H[25;64H2[14;8H[25;64H3[15;8H[25;64H2[14;8H[25;64H1[13;8H[25;64H0[12;8H[25;63H49[11;8H[25;64H8[10;8H[25;64H7,0-1[9;1H[25;64H6,1-8[8;8H[25;64H5[7;8H[25;64H4[6;8H[25;64H5[7;8H[25;64H6[8;8H[25;64H7,0-1[9;1H[25;64H8,1-8[10;8H[25;64H7,0-1[9;1H[25;64H6,1-8[8;8H[25;64H5[7;8H[25;64H4[6;8H[25;64H3[5;8H[25;64H4[6;8H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H44,1[10C63%[6;1H/[25;66H2[6;2H[34m//      char *argV[100];[m[25;66H3[6;3H[7;24r[7;1H[L[1;25r[6;3H[K[7;1H[34m//      char *argV[100];[m[25;63H[K[25;63H45,3[10C62%[7;3H/       [32mchar[m *argV[[31m100[m];[25;66H2[7;2H [25;66H1[7;1H[6;24r[24;1H
+[1;25r[6;1H[34m//      char *argV[100];[m[24;8H [33melse[m [33mif[m(pid>[31m0[m)[25;63H[K[25;63H44,3[10C63%[6;3H[25;1H[K[6;2H[25;63H44,2[10C63%[6;2H[25;64H5,1-8[7;8H[25;64H6[8;8H[25;64H7,0-1[9;1H[25;64H8,1-8[10;8H[25;64H9[11;8H[25;63H50[12;8H[25;64H1[13;8H[25;64H2[14;8H[25;64H3[15;8H[25;64H4,0-1[16;1H[25;64H5,1-8[17;8H[25;64H6[18;8H[25;64H7[19;8H[25;64H8[20;8H[25;64H9[21;8H[25;63H60[22;8H[25;64H1[23;8H[25;64H2[24;8H[1;24r[24;1H
+[1;25r[24;8H {[25;63H[K[25;63H63,1-8[8C65%[24;8H[1;24r[24;1H
+[1;25r[24;16H [33mif[m(-[31m1[m == wait([31m0[m))[25;63H[K[25;63H64,1-8[8C66%[24;8H[1;24r[24;1H
+[1;25r[24;24H perror([31m"There was an error with wait()."[m);[25;63H[K[25;63H65,1-8[8C68%[24;8H[1;24r[24;1H
+[1;25r[24;8H }[25;63H[K[25;63H66,1-8[8C70%[24;8H[1;24r[24;1H
+[1;25r[24;1H}[25;63H[K[25;63H67,1[10C71%[24;1H[1;24r[24;1H
+[1;25r[24;8H [33mreturn[m [31m0[m;[25;63H[K[25;63H68,1-8[8C73%[24;8H[1;24r[24;1H
+[1;25r[24;1H}[25;63H[K[25;63H69,1[10C75%[24;1H[25;63H[K[25;1H:wq"rshell.cpp" 84L, 1037C written
+[?1l>[2J[?47l8[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp [8P./a.outg++ rshell.cpp 
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m g++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C[8P./a.out
+$ls
+
+$a.out  rshell.cpp
+ls -a
+
+$.  ..  a.out  rshell.cpp
+ls
+
+$a.out  rshell.cpp
+ls
+
+$a.out  rshell.cpp
+ls -a ; echo hello
+
+$ls: cannot access ;: No such file or directory
+ls: cannot access echo: No such file or directory
+ls: cannot access hello: No such file or directory
+ls -a
+
+$.  ..  a.out  rshell.cpp
+ls ; echo
+
+$ls: cannot access ;: No such file or directory
+ls: cannot access echo: No such file or directory
+
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp 
+7[?47h[?1h=[1;25r[m[H[2J[25;1H"rshell.cpp" 84L, 1037C[>c[1;24H perror([31m"error in execvp"[m);[2;24H exit([31m1[m);[3;16H }[5;8H [33melse[m [33mif[m(pid>[31m0[m)[6;8H {[7;16H [33mif[m(-[31m1[m == wait([31m0[m))[8;24H perror([31m"There was an error with wait()."[m);[9;8H }
+}[11;8H [33mreturn[m [31m0[m;
+}[25;63H69,1[10C95%[12;1H[25;64H8,1-8[11;8H[25;64H7,1  [10;1H[25;64H6,1-8[9;8H[25;64H5[8;8H[25;64H4[7;8H[25;64H3[6;8H[25;64H2[5;8H[25;64H1[4;8H[25;64H0[3;8H[25;63H59[2;8H[25;64H8[1;8H[1;24r[1;1H[L[1;25r[1;16H {[25;1H[K[25;63H57,1-8[8C93%[1;8H[1;24r[1;1H[L[1;25r[1;16H [33mif[m(execvp(*argV, argV) != [31m0[m)[25;63H[K[25;63H56,1-8[8C91%[1;8H[1;24r[1;1H[L[1;25r[1;8H [33melse[m [33mif[m(pid == [31m0[m)[25;63H[K[25;63H55,1-8[8C90%[1;8H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H54,0-1[8C88%[1;1H[1;24r[1;1H[L[1;25r[1;8H }[25;63H[K[25;63H53,1-8[8C86%[1;8H[1;24r[1;1H[L[1;25r[1;16H exit([31m1[m);[25;63H[K[25;63H52,1-8[8C85%[1;8H[1;24r[1;1H[L[1;25r[1;16H perror([31m"fork fail"[m);[25;63H[K[25;63H51,1-8[8C83%[1;8H[1;24r[1;1H[L[1;25r[1;8H {[25;63H[K[25;63H50,1-8[8C81%[1;8H[1;24r[1;1H[L[1;25r[1;8H [33mif[m(pid == -[31m1[m)[25;63H[K[25;63H49,1-8[8C80%[1;8H[1;24r[1;1H[L[1;25r[1;8H [32mint[m pid = fork();[25;63H[K[25;63H48,1-8[8C78%[1;8H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H47,0-1[8C76%[1;1H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H46,1-8[8C75%[1;8H[1;24r[1;1H[L[1;25r[1;8H makeARGV(cmd, argV);[25;63H[K[25;63H45,1-8[8C73%[1;8H[1;24r[1;1H[L[1;25r[1;1H[34m//      char *argV[100];[m[25;63H[K[25;63H44,1[10C71%[1;1H[1;24r[1;1H[L[1;25r[1;8H cout << endl;[25;63H[K[25;63H43,1-8[8C70%[1;8H[1;24r[1;1H[L[1;25r[1;8H cin.getline(cmd, [31m100[m, [35m'\n'[m);[25;63H[K[25;63H42,1-8[8C68%[1;8H[1;24r[1;1H[L[1;25r[1;8H cout [34m/*<< name << '@' << host */[m<< [31m'$'[m;[25;63H[K[25;63H41,1-8[8C66%[1;8H[1;24r[1;1H[L[1;25r[1;1H{[25;63H[K[25;63H40,1[10C65%[1;1H[1;24r[1;1H[L[1;25r[1;8H [33mwhile[m([31m1[m)[25;63H[K[25;63H39,1-8[8C63%[1;8H[1;24r[1;1H[L[1;25r[1;8H [32mchar[m *argV[[31m100[m];[25;63H[K[25;63H38,1-8[8C61%[1;8H[1;24r[1;1H[L[1;25r[1;8H [32mchar[m cmd[[31m100[m];[25;63H[K[25;63H37,1-8[8C60%[1;8H[1;24r[1;1H[L[1;25r[1;1H{[25;63H[K[25;63H36,1[10C58%[1;1H[1;24r[1;1H[L[1;25r[1;1H[32mint[m main()[25;63H[K[25;63H35,1[10C56%[1;1H[25;64H6[2;1H[25;64H7,1-8[3;8H[25;64H8[4;8H[25;64H9[5;8H[25;64H8[4;8H[25;64H7[3;8H[25;64H6,1  [2;1H[25;64H5[1;1H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H34,0-1[8C55%[1;1H[1;24r[1;1H[L[1;25r[1;1H}[25;63H[K[25;63H33,1[10C53%[1;1H[1;24r[1;1H[L[1;25r[1;8H *argV = [35m'\0'[m;[25;63H[K[25;63H32,1-8[8C51%[1;8H[1;24r[1;1H[L[1;25r[1;8H }[25;63H[K[25;63H31,1-8[8C50%[1;8H[1;24r[1;1H[L[1;25r[1;24H cmd++;[25;63H[K[25;63H30,1-8[8C48%[1;8H[1;24r[1;1H[2L[1;25r[1;16H [33mwhile[m(*cmd != [35m'\0'[m && *cmd != [31m' '[m && *cmd != [35m'\t'[m && *cmd != [35m'\nn[2;1H'[m)[25;63H[K[25;63H29,1-8[8C45%[1;8H[1;24r[1;1H[L[1;25r[1;16H *argV++ = cmd;[25;63H[K[25;63H28,1-8[8C44%[1;8H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H27,0-1[8C42%[1;1H[1;24r[1;1H[L[1;25r[1;24H *cmd++ = [35m'\0'[m;[25;63H[K[25;63H26,1-8[8C40%[1;8H[1;24r[1;1H[L[1;25r[1;16H [33mwhile[m(*cmd == [31m' '[m|| *cmd == [35m'\t'[m || *cmd == [35m'\n'[m)[25;63H[K[25;63H25,1-8[8C39%[1;8H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H24,0-1[8C37%[1;1H[1;24r[1;1H[L[1;25r[1;16H }[25;63H[K[25;63H23,1-8[8C36%[1;8H[1;24r[1;1H[L[1;25r[1;24H [33mbreak[m;[25;63H[K[25;63H22,1-8[8C34%[1;8H[1;24r[1;1H[L[1;25r[1;24H *cmd = [35m'\0'[m;[25;63H[K[25;63H21,1-8[8C32%[1;8H[1;24r[1;1H[L[1;25r[1;16H {[25;63H[K[25;63H20,1-8[8C31%[1;8H[1;24r[1;1H[L[1;25r[1;16H [33mif[m(*cmd == [31m'#'[m)[25;63H[K[25;63H19,1-8[8C29%[1;8H[1;24r[1;1H[L[1;25r[1;8H {[25;63H[K[25;63H18,1-8[8C27%[1;8H[1;24r[1;1H[L[1;25r[1;8H [33mwhile[m(*cmd != [35m'\0'[m)[25;63H[K[25;63H17,1-8[8C26%[1;8H[1;24r[1;1H[L[1;25r[1;1H[46m{[19;1H}[m[25;63H[K[25;63H16,1[10C24%[1;1H[1;24r[1;1H[L[1;25r[1;1H[32mvoid[m makeARGV([32mchar[m *cmd, [32mchar[m **argV)
+{[20;1H}[25;63H[K[25;63H15,1[10C22%[1;1H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H14,0-1[8C21%[1;1H[1;24r[1;1H[L[1;25r[1;1H[33musing[m [32mnamespace[m std;[25;63H[K[25;63H13,1[10C19%[1;1H[25;64H4,0-1[2;1H[25;64H5,1  [3;1H
+[46m{[22;1H}[m[25;64H6[4;1H{[22;1H}[25;64H7,1-8[5;8H[25;64H8[6;8H[25;64H9[7;8H[25;63H20[8;8H[25;63H19[7;8H[25;64H8[6;8H[25;64H7[5;8H[4;1H[46m{[22;1H}[m[25;64H6,1  [4;1H{[22;1H}[25;64H5[3;1H[25;64H4,0-1[2;1H[25;64H3,1  [1;1H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H12,0-1[8C18%[1;1H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<sys/types.h>[m[25;63H[K[25;63H11,1[10C16%[1;1H[25;64H2,0-1[2;1H[25;64H3,1  [3;1H[25;64H4,0-1[4;1H[25;64H5,1  [5;1H
+[46m{[24;1H}[m[25;64H6[6;1H{[24;1H}[25;64H7,1-8[7;8H[25;64H8[8;8H[25;64H9[9;8H[25;63H20[10;8H[25;63H19[9;8H[25;63H[K[25;1H//[25;2H[K[25;2H [61C19,1-8[8C16%[9;8H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H19,1[10C16%[9;1H/[25;66H2[9;2H[34m//              if(*cmd == '#')[m[25;66H3[9;3H[25;1H[K[9;2H[25;63H19,2[10C16%[9;2H[25;63H20,1-8[10;8H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H20,1[10C16%[10;1H/[25;66H2[10;2H[34m//              {[m[25;66H3[10;3H[25;1H[K[10;2H[25;63H20,2[10C16%[10;2H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H20,2[10C16%[10;2H/               {[25;66H1[10;1H[9;24r[24;1H
+[1;25r[9;1H[34m//              if(*cmd == '#')/                {[m[25;63H[K[25;63H19,20-32      16%[9;19H[34m[46m([11C)[10;24r[m[10;1H[L[1;25r[9;32H[K[10;1H[34m//              /               {[m[25;63H[K[25;63H20,5-17[7C16%[9;19H[34m([11C)[10;17H[10;8H /               {[m[10;26H[K[25;66H4-9 [10;9H[10;2H[34m//             {[m[10;18H[K[25;66H3  [10;3H[25;1H[K[10;2H[25;63H20,3[10C16%[10;3H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H20,4[10C16%[10;4H[34m/ [m[25;66H3[10;3H/               {[25;66H2[10;2H [25;66H1[10;1H[25;1H[K[10;1H[25;63H20,1-8[8C16%[10;8H[25;64H1[11;8H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H21,1[10C16%[11;1H/[25;66H2[11;2H[34m//                      *cmd = '\0';[m[25;66H3[11;3H[25;1H[K[11;2H[25;63H21,2[10C16%[11;2H[25;64H2,1-8[12;8H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H22,1[10C16%[12;1H/[25;66H2[12;2H[34m//                      break;[m[25;66H3[12;3H[25;1H[K[12;2H[25;63H22,2[10C16%[12;2H[25;63H[K[25;1H:wq"rshell.cpp" 84L, 1043C written
+[?1l>[2J[?47l8[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp [8P./a.outg++ rshell.cpp 
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m g++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C[8P./a.outg++ rshell.cpp [8P./a.out
+$ls ; ls
+
+$ls: cannot access ;: No such file or directory
+ls: cannot access ls: No such file or directory
+
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ./a.outg++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C
+7[?47h[?1h=[1;25r[m[H[2J[25;1H"rshell.cpp" 84L, 1043C[>c[1;1H[35m#include [m[31m<iostream>[m
+[35m#include [m[31m<string>[m
+[35m#include [m[31m<unistd.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<sys/wait.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<algorithm>[m
+[35m#include [m[31m<cctype>[m
+[35m#include [m[31m<functional>[m
+[35m#include [m[31m<locale>[m
+[35m#include [m[31m<sys/types.h>[m
+
+[33musing[m [32mnamespace[m std;
+
+[32mvoid[m makeARGV([32mchar[m *cmd, [32mchar[m **argV)
+{[17;8H [33mwhile[m(*cmd != [35m'\0'[m)[18;8H {
+[34m//              if(*cmd == '#')[m[20;16H {
+[34m//                      *cmd = '\0';
+//                      break;[m[23;16H }[25;63H22,1[10CTop[22;1H[25;64H3,1-8[23;8H[25;64H4,0-1[24;1H[1;24r[24;1H
+[1;25r[24;16H [33mwhile[m(*cmd == [31m' '[m|| *cmd == [35m'\t'[m || *cmd == [35m'\n'[m)[25;1H[K[25;63H25,1-8[9C1%[24;8H[1;24r[24;1H
+[1;25r[24;24H *cmd++ = [35m'\0'[m;[25;63H[K[25;63H26,1-8[9C3%[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H27,0-1[9C5%[24;1H[1;24r[24;1H
+[1;25r[24;16H *argV++ = cmd;[25;63H[K[25;63H28,1-8[9C6%[24;8H[1;24r[1;1H[2M[1;25r[23;16H [33mwhile[m(*cmd != [35m'\0'[m && *cmd != [31m' '[m && *cmd != [35m'\t'[m && *cmd != [35m'\nn[24;1H'[m)[25;63H[K[25;63H29,1-8[9C9%[23;8H[1;24r[24;1H
+[1;25r[24;24H cmd++;[25;63H[K[25;63H30,1-8[8C11%[24;8H[1;24r[24;1H
+[1;25r[24;8H }[25;63H[K[25;63H31,1-8[8C13%[24;8H[1;24r[24;1H
+[1;25r[24;8H *argV = [35m'\0'[m;[25;63H[K[25;63H32,1-8[8C14%[24;8H[1;24r[24;1H
+[1;25r[6;1H[46m{[24;1H}[m[25;63H[K[25;63H33,1[10C16%[24;1H[1;24r[24;1H
+[1;25r[5;1H{[23;1H}[25;63H[K[25;63H34,0-1[8C18%[24;1H[1;24r[24;1H
+[1;25r[24;1H[32mint[m main()[25;63H[K[25;63H35,1[10C19%[24;1H[1;24r[24;1H
+[1;25r[24;1H{[25;63H[K[25;63H36,1[10C21%[24;1H[1;24r[24;1H
+[1;25r[24;8H [32mchar[m cmd[[31m100[m];[25;63H[K[25;63H37,1-8[8C22%[24;8H[1;24r[24;1H
+[1;25r[24;8H [32mchar[m *argV[[31m100[m];[25;63H[K[25;63H38,1-8[8C24%[24;8H[1;24r[24;1H
+[1;25r[24;8H [33mwhile[m([31m1[m)[25;63H[K[25;63H39,1-8[8C26%[24;8H[1;24r[24;1H
+[1;25r[24;1H{[25;63H[K[25;63H40,1[10C27%[24;1H[1;24r[24;1H
+[1;25r[24;8H cout [34m/*<< name << '@' << host */[m<< [31m'$'[m;[25;63H[K[25;63H41,1-8[8C29%[24;8H[1;24r[24;1H
+[1;25r[24;8H cin.getline(cmd, [31m100[m, [35m'\n'[m);[25;63H[K[25;63H42,1-8[8C31%[24;8H[1;24r[24;1H
+[1;25r[24;8H cout << endl;[25;63H[K[25;63H43,1-8[8C32%[24;8H[1;24r[24;1H
+[1;25r[24;1H[34m//      char *argV[100];[m[25;63H[K[25;63H44,1[10C34%[24;1H[1;24r[24;1H
+[1;25r[24;8H makeARGV(cmd, argV);[25;63H[K[25;63H45,1-8[8C36%[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H46,1-8[8C37%[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H47,0-1[8C39%[24;1H[1;24r[24;1H
+[1;25r[24;8H [32mint[m pid = fork();[25;63H[K[25;63H48,1-8[8C40%[24;8H[1;24r[24;1H
+[1;25r[24;8H [33mif[m(pid == -[31m1[m)[25;63H[K[25;63H49,1-8[8C42%[24;8H[1;24r[24;1H
+[1;25r[24;8H {[25;63H[K[25;63H50,1-8[8C44%[24;8H[1;24r[24;1H
+[1;25r[24;16H perror([31m"fork fail"[m);[25;63H[K[25;63H51,1-8[8C45%[24;8H[1;24r[1;1H[2M[1;25r[23;16H exit([31m1[m);[24;8H }[25;63H[K[25;63H52,1-8[8C48%[23;8H[25;64H3[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H54,0-1[8C50%[24;1H[1;24r[24;1H
+[1;25r[24;8H [33melse[m [33mif[m(pid == [31m0[m)[25;63H[K[25;63H55,1-8[8C51%[24;8H[1;24r[24;1H
+[1;25r[24;16H [33mif[m(execvp(*argV, argV) != [31m0[m)[25;63H[K[25;63H56,1-8[8C53%[24;8H[1;24r[24;1H
+[1;25r[24;16H {[25;63H[K[25;63H57,1-8[8C55%[24;8H[1;24r[24;1H
+[1;25r[24;24H perror([31m"error in execvp"[m);[25;63H[K[25;63H58,1-8[8C56%[24;8H[1;24r[24;1H
+[1;25r[24;24H exit([31m1[m);[25;63H[K[25;63H59,1-8[8C58%[24;8H[1;24r[24;1H
+[1;25r[24;16H }[25;63H[K[25;63H60,1-8[8C60%[24;8H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H61,1-8[8C61%[24;8H[1;24r[24;1H
+[1;25r[24;8H [33melse[m [33mif[m(pid>[31m0[m)[25;63H[K[25;63H62,1-8[8C63%[24;8H[1;24r[24;1H
+[1;25r[24;8H {[25;63H[K[25;63H63,1-8[8C65%[24;8H[1;24r[24;1H
+[1;25r[24;16H [33mif[m(-[31m1[m == wait([31m0[m))[25;63H[K[25;63H64,1-8[8C66%[24;8H[1;24r[24;1H
+[1;25r[24;24H perror([31m"There was an error with wait()."[m);[25;63H[K[25;63H65,1-8[8C68%[24;8H[1;24r[24;1H
+[1;25r[24;8H }[25;63H[K[25;63H66,1-8[8C70%[24;8H[1;24r[24;1H
+[1;25r[24;1H}[25;63H[K[25;63H67,1[10C71%[24;1H[1;24r[24;1H
+[1;25r[24;8H [33mreturn[m [31m0[m;[25;63H[K[25;63H68,1-8[8C73%[24;8H[1;24r[24;1H
+[1;25r[24;1H}[25;63H[K[25;63H69,1[10C75%[24;1H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H70,0-1[8C76%[24;1H[1;24r[24;1H
+[1;25r[25;63H[K[25;63H71,0-1[8C78%[24;1H[25;64H0[23;1H[25;63H69,1  [22;1H[25;64H8,1-8[21;8H[25;64H7,1  [20;1H[25;64H6,1-8[19;8H[25;64H5[18;8H[25;64H4[17;8H[25;64H3[16;8H[25;64H2[15;8H[25;64H1[14;8H[25;64H0[13;8H[25;63H59[12;8H[25;64H8[11;8H[25;64H7[10;8H[25;64H6[9;8H[25;64H5[8;8H[25;64H4,0-1[7;1H[25;64H3,1-8[6;8H[25;64H2[5;8H[25;64H1[4;8H[25;64H0[3;8H[25;63H49[2;8H[25;64H8[1;8H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H47,0-1[8C76%[1;1H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H46,1-8[8C75%[1;8H[1;24r[1;1H[L[1;25r[1;8H makeARGV(cmd, argV);[25;63H[K[25;63H45,1-8[8C73%[1;8H[1;24r[1;1H[L[1;25r[1;1H[34m//      char *argV[100];[m[25;63H[K[25;63H44,1[10C71%[1;1H[1;24r[1;1H[L[1;25r[1;8H cout << endl;[25;63H[K[25;63H43,1-8[8C70%[1;8H[1;24r[1;1H[L[1;25r[1;8H cin.getline(cmd, [31m100[m, [35m'\n'[m);[25;63H[K[25;63H42,1-8[8C68%[1;8H[25;64H3[2;8H[25;64H4,1  [3;1H[25;64H5,1-8[4;8H[25;64H6[5;8H[25;64H5[4;8H[25;64H4,1  [3;1H[25;64H3,1-8[2;8H[25;64H2[1;8H[1;24r[1;1H[L[1;25r[1;8H cout [34m/*<< name << '@' << host */[m<< [31m'$'[m;[25;63H[K[25;63H41,1-8[8C66%[1;8H[1;24r[1;1H[L[1;25r[1;1H{[25;63H[K[25;63H40,1[10C65%[1;1H[1;24r[1;1H[L[1;25r[1;8H [33mwhile[m([31m1[m)[25;63H[K[25;63H39,1-8[8C63%[1;8H[1;24r[1;1H[L[1;25r[1;8H [32mchar[m *argV[[31m100[m];[25;63H[K[25;63H38,1-8[8C61%[1;8H[1;24r[1;1H[L[1;25r[1;8H [32mchar[m cmd[[31m100[m];[25;63H[K[25;63H37,1-8[8C60%[1;8H[1;24r[1;1H[L[1;25r[1;1H{[25;63H[K[25;63H36,1[10C58%[1;1H[25;64H7,1-8[2;8H[25;64H8[3;8H[25;64H9[4;8H[25;63H40,1  [5;1H[25;64H1,1-8[6;8H[25;64H2[7;8H[25;64H3[8;8H[25;64H4,1  [9;1H[25;64H5,1-8[10;8H[25;64H6[11;8H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H46,1[10C58%[11;1H[25;66H2-9[11;9H i[25;66H3-10[11;10H[33mif[m[25;66H4-11[11;11H[25;66H5-12[11;12H[25;66H4-11[11;11H[33mf[m([15;9H[1m[37m[41m{[18;9H}[22;17H{[m[25;66H5-12[11;12H(s[25;66H6-13[11;13Hst[25;66H7-14[11;14Htr[25;66H8-15[11;15Hrc[25;66H9-16[11;16Hcm[25;66H10-17[11;17Hmp[25;67H1-18[11;18Hp([25;67H2-19[11;19H(a[25;67H3-20[11;20Har[25;67H4-21[11;21Hrg[25;67H5-22[11;22HgV[25;67H6-23[11;23H[25;67H7-24[11;24H =[25;67H8-25[11;25H==[25;67H9-26[11;26H[25;66H20-27[11;27H[25;66H19-26[11;26H= [25;67H8-25[11;25H  [25;67H7-24[11;24H[25;67H6-23[11;23HV[[13;25H[1m[37m[41m;[16;36H;[17;24H;[23;50H;[24;32H;[m[25;67H7-24[11;24H[[31m0[m[25;67H8-25[11;25H[31m0[m][13;25H;[16;36H;[17;24H;[23;50H; [24;32H;[11;23H[46m[[1C][m[25;67H9-26[11;26H[31m0[m[46m        [m[13;25H[1m[37m[41m;[16;36H;[17;24H;[23;50H;[24;32H;[m[11;23H[[1C        [25;67H8-25[11;25H[ [25;67H7-24[11;24HV [13;25H;[16;36H;[17;24H;[23;50H; [24;32H;[25;67H6-23[11;23HD [25;1H[K[25;63H46,15-22      58%[11;22H[25;1H[1m[37m[41mE388: Couldn't find definition[m[25;63H[K[25;63H46,15-22      58%[11;22H[25;63H[K[25;63H46,15-22      58%[11;22H[25;63H[K[25;63H46,15-22      58%[11;22H[25;64H7,0-1  [12;1H[25;64H8,15-22[13;22H[25;64H7,0-1  [12;1H[25;64H6,15-22[11;22H[25;67H4-21[11;21H[25;67H3-20[11;20H[25;67H2-19[11;19H[25;1H[1m--[m[1m[37m[41m8[m[1m INSERT[m[1m[37m[41ml[m[1m --[m[1m[37m[41m'[m[25;13H[K[25;63H46,12-19      58%[11;19H(*argV[25;67H3-20[11;20H[25;1H[K[11;19H[25;63H46,12-19      58%[11;19H[25;67H3-20[11;20H[25;67H4-21[11;21H[25;67H5-22[11;22H[25;67H6-23[11;23H[25;67H7-24[11;24H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H46,17-24      58%[11;24HV,[25;67H8-25[11;25H,[31m"       
+
+        int pid = fork();
+        if(pid == -1)
+        {
+                perror([m[1Cfork fail[1C[31m);
+                exit(1);
+        }
+
+        else if(pid == 0)
+                if(execvp(*argV, argV) != 0)
+                {
+                        perror([m[1Cerror in execvp[1C[31m);      
+                        exit(1);[m[25;67H9-26[11;26H[31m"e[m[25;66H20-27[11;27H[31mex[m[25;67H1-28[11;28H[31mxi[m[25;67H2-29[11;29H[31mit[m[25;67H3-30[11;30H[31mt"[m  
+
+        [32mint[m pid = fork();
+        [33mif[m(pid == -[1C)
+        [1m[37m[41m{[m
+                perror([1C[31mfork fail[m[1C);
+                exit([1C);
+        [1m[37m[41m}[m
+
+        [33melse[m [33mif[m(pid == [1C)
+                [33mif[m(execvp(*argV, argV) != [1C)
+                [1m[37m[41m{[m
+                        perror([1C[31merror in execvp[m[1C);      
+                        exit([1C);[25;67H4-31[11;31H[31m"[m)[11;18H[46m([12C)[m[25;67H5-32[11;32H[46m)[m=[11;18H([12C)[25;67H6-33[11;33H==[25;67H7-34[11;34H=[31m0[m[25;67H8-35[11;35H[31m0[m)[15;9H{[18;9H}[22;17H{[11;11H[46m([23C)[m[25;67H9-36[11;36H[12;24r[12;1H[L[1;25r[25;63H[K[25;63H47,1[10C57%[11;11H([23C)
+[25;66H2-9[12;9H[25;66H3-17[12;17H e[25;66H4-18[12;18Hex[25;66H5-19[12;19Hxi[25;66H6-20[12;20Hit[25;66H7-21[12;21Ht([16;9H[1m[37m[41m{[19;9H}[23;17H{[m[25;66H8-22[12;22H([31m0[m[25;66H9-23[12;23H[31m0[m)[16;9H{[19;9H}[23;17H{[12;21H[46m([1C)[m[25;66H10-24[12;24H[46m)[m;([1C)[25;67H1-25[12;25H[25;1H[K[12;24H[25;63H47,10-24      57%[12;24H[25;63H[K[25;1H:wq"rshell.cpp" 85L, 1082C written
+[?1l>[2J[?47l8[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp [8P./a.outg++ rshell.cpp 
+[01m[Krshell.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Krshell.cpp:46:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstrcmp[m[K’ was not declared in this scope
+  if(strcmp(*argV,"exit")==0)
+[01;32m[K                        ^[m[K
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m g++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C
+7[?47h[?1h=[1;25r[m[H[2J[25;1H"rshell.cpp" 85L, 1082C[>c[1;1H{[2;8H [32mchar[m cmd[[31m100[m];[3;8H [32mchar[m *argV[[31m100[m];[4;8H [33mwhile[m([31m1[m)
+{[6;8H cout [34m/*<< name << '@' << host */[m<< [31m'$'[m;[7;8H cin.getline(cmd, [31m100[m, [35m'\n'[m);[8;8H cout << endl;
+[34m//      char *argV[100];[m[10;8H makeARGV(cmd, argV);[11;8H [33mif[m(strcmp(*argV,[31m"exit"[m)==[31m0[m)[12;16H exit([31m0[m);[14;8H [32mint[m pid = fork();[15;8H [33mif[m(pid == -[31m1[m)[16;8H {[17;16H perror([31m"fork fail"[m);[18;16H exit([31m1[m);[19;8H }[21;8H [33melse[m [33mif[m(pid == [31m0[m)[22;16H [33mif[m(execvp(*argV, argV) != [31m0[m)[23;16H {[24;24H perror([31m"error in execvp"[m);[25;63H47,3-17[7C57%[12;17H[25;64H8,0-1 [13;1H[25;64H7,3-17[12;17H[25;64H6,10-17[11;17H[10;17H[46m([9C)[m[25;64H5[10;17H([9C)[25;64H4,12[9;17H[25;64H3,10[8;17H[25;64H2[7;17H[25;64H1[6;17H[25;64H0,2-8  [5;8H[4;14H[46m([1C)[m[25;63H39,9-16[4;16H([1C)[25;64H8,10-17[3;17H[2;17H[46m[[3C][m[25;64H7[2;17H[[3C][25;64H6,1    [1;1H[1;24r[1;1H[L[1;25r[1;1H[32mint[m main[46m()[m[25;1H[K[25;63H35,10[9C55%[1;10H[1;24r[1;1H[L[1;25r[2;9H()[25;63H[K[25;63H34,0-1[8C54%[1;1H[1;24r[1;1H[L[1;25r[1;1H}[25;63H[K[25;63H33,1[10C52%[1;1H[1;24r[1;1H[L[1;25r[1;8H *argV = [35m'\0'[m;[25;63H[K[25;63H32,10-17      50%[1;17H[1;24r[1;1H[L[1;25r[1;8H }[25;63H[K[25;63H31,2-9[8C49%[1;9H[1;24r[1;1H[L[1;25r[1;24H cmd++;[25;63H[K[25;63H30,3-24[7C47%[1;24H[1;24r[1;1H[2L[1;25r[1;16H [33mwhile[m(*cmd != [35m'\0'[m && *cmd != [31m' '[m && *cmd != [35m'\t'[m && *cmd != [35m'\nn[2;1H'[m)[25;63H[K[25;63H29,3-17[7C45%[1;17H[1;24r[1;1H[L[1;25r[1;16H *argV++ = cmd;[25;63H[K[25;63H28,3-17[7C43%[1;17H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H27,0-1[8C41%[1;1H[1;24r[1;1H[L[1;25r[1;24H *cmd++ = [35m'\0'[m;[25;63H[K[25;63H26,3-24[7C40%[1;24H[1;24r[1;1H[L[1;25r[1;16H [33mwhile[m(*cmd == [31m' '[m|| *cmd == [35m'\t'[m || *cmd == [35m'\n'[m)[25;63H[K[25;63H25,3-17[7C38%[1;17H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H24,0-1[8C37%[1;1H[1;24r[1;1H[L[1;25r[1;16H }[25;63H[K[25;63H23,3-17[7C35%[1;17H[1;24r[1;1H[L[1;25r[1;1H[34m//                      break;[m[25;63H[K[25;63H22,5-24[7C33%[1;24H[1;24r[1;1H[L[1;25r[1;1H[34m//                      *cmd = '\0';[m[25;63H[K[25;63H21,5-24[7C32%[1;24H[1;24r[1;1H[L[1;25r[1;16H [46m{[4;17H}[m[25;63H[K[25;63H20,3-17[7C30%[1;17H[1;24r[1;1H[L[1;25r[1;1H[34m//              if(*cmd == '#')[m[2;17H{[5;17H}[25;63H[K[25;63H19,5-17[7C29%[1;17H[1;24r[1;1H[L[1;25r[1;8H [46m{[15;9H}[m[25;63H[K[25;63H18,2-9[8C27%[1;9H[1;24r[1;1H[L[1;25r[1;8H [33mwhile[m(*cmd != [35m'\0'[m)[2;9H{[16;9H}[25;63H[K[25;63H17,10-17      25%[1;17H[1;24r[1;1H[L[1;25r[1;1H[46m{[19;1H}[m[25;63H[K[25;63H16,1[10C24%[1;1H[1;24r[1;1H[L[1;25r[1;1H[32mvoid[m makeARGV([32mchar[m *cmd, [32mchar[m **argV)
+{[20;1H}[25;63H[K[25;63H15,17[9C22%[1;17H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H14,0-1[8C20%[1;1H[1;24r[1;1H[L[1;25r[1;1H[33musing[m [32mnamespace[m std;[25;63H[K[25;63H13,17[9C19%[1;17H[1;24r[1;1H[L[1;25r[25;63H[K[25;63H12,0-1[8C17%[1;1H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<sys/types.h>[m[25;63H[K[25;63H11,17[9C16%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<locale>[m[25;63H[K[25;63H10,17[9C14%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<functional>[m[25;63H[K[25;63H9,17[10C12%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<cctype>[m[25;63H[K[25;63H8,17[10C11%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<algorithm>[m[25;63H[K[25;63H7,17[11C9%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<stdlib.h>[m[24;1H[1m[34m@                                                                               [m[25;63H[K[25;63H6,17[11C8%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<sys/wait.h>[m[25;63H[K[25;63H5,17[11C6%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<stdio.h>[m[25;63H[K[25;63H4,17[11C4%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<unistd.h>[m[25;63H[K[25;63H3,17[11C3%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<string>[m[25;63H[K[25;63H2,17[11C1%[1;17H[1;24r[1;1H[L[1;25r[1;1H[35m#include [m[31m<iostream>[m[25;63H[K[25;63H1,17[10CTop[1;17H[25;63H2[2;17H[25;1H[1m-- INSERT --[m[25;63H[K[25;63H2,17[10CTop[2;17H[31mg.>[m[25;66H8[2;18H[31m.h>[m[25;66H9[2;19H[25;1H[K[2;18H[25;63H2,18[10CTop[2;18H[25;63H[K[25;1H:wq"rshell.cpp" 85L, 1084C written
+[?1l>[2J[?47l8[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m vim rshell.cpp g++[C[C[C[C[C[C[C[C[C[C[C[C
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m g++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[Cg++[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[Cg++[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[Cg++[C[C[C[C[C[C[C[C[C[C[C[C[Kg++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[Cg++[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[8P./a.out
+$lds ; ls
+
+$ls: cannot access ;: No such file or directory
+ls: cannot access ls: No such file or directory
+ls
+
+$a.out  rshell.cpp
+ls
+
+$a.out  rshell.cpp
+ls
+
+$a.out  rshell.cpp
+exit
+
+[s%%%%%%%%%%[u[0;32mcibar007[0;36m@[0;32mcs100[0;36m:[0;32m~/rshell/src[0;95m (exec) [0;36m$[0m ./a.outg++ rshell.cpp vim[C[C[C[C[C[C[C[C[C[C[C[C
+7[?47h[?1h=[1;25r[m[H[2J[25;1H"rshell.cpp" 85L, 1084C[>c[1;1H[35m#include [m[31m<iostream>[m
+[35m#include [m[31m<string.h>[m
+[35m#include [m[31m<unistd.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<sys/wait.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<algorithm>[m
+[35m#include [m[31m<cctype>[m
+[35m#include [m[31m<functional>[m
+[35m#include [m[31m<locale>[m
+[35m#include [m[31m<sys/types.h>[m
+
+[33musing[m [32mnamespace[m std;
+
+[32mvoid[m makeARGV([32mchar[m *cmd, [32mchar[m **argV)
+{[17;8H [33mwhile[m(*cmd != [35m'\0'[m)[18;8H {
